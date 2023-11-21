@@ -1,0 +1,832 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="addIntWs" targetNamespace="http://DESKTOP-0NSV5VM/Task.v4.services:addIntWs" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soapjms="http://www.w3.org/2010/soapjms/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://DESKTOP-0NSV5VM/Task.v4.services:addIntWs" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://DESKTOP-0NSV5VM/Task.v4.services:addIntWs" xmlns:tns="http://DESKTOP-0NSV5VM/Task.v4.services:addIntWs" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+          <xsd:element name="addInputList" type="tns:addInputList"/>
+          <xsd:element name="addInputListResponse" type="tns:addInputListResponse"/>
+          <xsd:element name="calcExceptionHandling" type="tns:calcExceptionHandling"/>
+          <xsd:element name="calcExceptionHandlingResponse" type="tns:calcExceptionHandlingResponse"/>
+          <xsd:element name="calcIfElse" type="tns:calcIfElse"/>
+          <xsd:element name="calcIfElseResponse" type="tns:calcIfElseResponse"/>
+          <xsd:element name="ifElse" type="tns:ifElse"/>
+          <xsd:element name="ifElseResponse" type="tns:ifElseResponse"/>
+          <xsd:element name="addDocumentList" type="tns:addDocumentList"/>
+          <xsd:element name="addDocumentListResponse" type="tns:addDocumentListResponse"/>
+          <xsd:element name="addIntList" type="tns:addIntList"/>
+          <xsd:element name="addIntListResponse" type="tns:addIntListResponse"/>
+          <xsd:element name="evenNumber" type="tns:evenNumber"/>
+          <xsd:element name="evenNumberResponse" type="tns:evenNumberResponse"/>
+          <xsd:element name="oddNumber" type="tns:oddNumber"/>
+          <xsd:element name="oddNumberResponse" type="tns:oddNumberResponse"/>
+          <xsd:element name="concatAndUpper" type="tns:concatAndUpper"/>
+          <xsd:element name="concatAndUpperResponse" type="tns:concatAndUpperResponse"/>
+          <xsd:element name="indexNumber" type="tns:indexNumber"/>
+          <xsd:element name="indexNumberResponse" type="tns:indexNumberResponse"/>
+          <xsd:element name="newLineCharactor" type="tns:newLineCharactor"/>
+          <xsd:element name="newLineCharactorResponse" type="tns:newLineCharactorResponse"/>
+          <xsd:element name="replaceAll" type="tns:replaceAll"/>
+          <xsd:element name="replaceAllResponse" type="tns:replaceAllResponse"/>
+          <xsd:element name="stringColonSeprated" type="tns:stringColonSeprated"/>
+          <xsd:element name="stringColonSepratedResponse" type="tns:stringColonSepratedResponse"/>
+          <xsd:element name="stringEmptySpace" type="tns:stringEmptySpace"/>
+          <xsd:element name="stringEmptySpaceResponse" type="tns:stringEmptySpaceResponse"/>
+          <xsd:element name="stringMethods" type="tns:stringMethods"/>
+          <xsd:element name="stringMethodsResponse" type="tns:stringMethodsResponse"/>
+          <xsd:element name="compareDates" type="tns:compareDates"/>
+          <xsd:element name="compareDatesResponse" type="tns:compareDatesResponse"/>
+          <xsd:element name="dateFormatConversion" type="tns:dateFormatConversion"/>
+          <xsd:element name="dateFormatConversionResponse" type="tns:dateFormatConversionResponse"/>
+          <xsd:element name="getCurrentDateTime" type="tns:getCurrentDateTime"/>
+          <xsd:element name="getCurrentDateTimeResponse" type="tns:getCurrentDateTimeResponse"/>
+          <xsd:element name="getDateTimeFormat" type="tns:getDateTimeFormat"/>
+          <xsd:element name="getDateTimeFormatResponse" type="tns:getDateTimeFormatResponse"/>
+          <xsd:element name="getStartEndDate" type="tns:getStartEndDate"/>
+          <xsd:element name="getStartEndDateResponse" type="tns:getStartEndDateResponse"/>
+          <xsd:element name="workingDays" type="tns:workingDays"/>
+          <xsd:element name="workingDaysResponse" type="tns:workingDaysResponse"/>
+          <xsd:element name="calcPrac" type="tns:calcPrac"/>
+          <xsd:element name="calcPracResponse" type="tns:calcPracResponse"/>
+          <xsd:complexType name="addInputList">
+            <xsd:sequence>
+              <xsd:element maxOccurs="unbounded" name="input" nillable="true" type="tns:input"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="input">
+            <xsd:sequence>
+              <xsd:element name="int1" nillable="true" type="xsd:string"/>
+              <xsd:element name="int2" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="addInputListResponse">
+            <xsd:sequence>
+              <xsd:element maxOccurs="unbounded" name="output" nillable="true" type="tns:output"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="output">
+            <xsd:sequence>
+              <xsd:element name="add" nillable="true" type="xsd:string"/>
+              <xsd:element name="sub" nillable="true" type="xsd:string"/>
+              <xsd:element name="mul" nillable="true" type="xsd:string"/>
+              <xsd:element name="div" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="calcExceptionHandling">
+            <xsd:sequence>
+              <xsd:element name="int1" nillable="true" type="xsd:string"/>
+              <xsd:element name="int2" nillable="true" type="xsd:string"/>
+              <xsd:element name="operation" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="calcExceptionHandlingResponse">
+            <xsd:sequence>
+              <xsd:element name="result" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="calcIfElse">
+            <xsd:sequence>
+              <xsd:element name="int1" nillable="true" type="xsd:string"/>
+              <xsd:element name="int2" nillable="true" type="xsd:string"/>
+              <xsd:element name="operation" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="calcIfElseResponse">
+            <xsd:sequence>
+              <xsd:element name="result" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="ifElse">
+            <xsd:sequence>
+              <xsd:element name="int1" nillable="true" type="xsd:string"/>
+              <xsd:element name="int2" nillable="true" type="xsd:string"/>
+              <xsd:element name="operation" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="ifElseResponse">
+            <xsd:sequence>
+              <xsd:element name="result" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="addDocumentList">
+            <xsd:sequence>
+              <xsd:element maxOccurs="unbounded" name="input" nillable="true" type="tns:input2"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="input2">
+            <xsd:sequence>
+              <xsd:element name="num1" nillable="true" type="xsd:string"/>
+              <xsd:element name="num2" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="addDocumentListResponse">
+            <xsd:sequence>
+              <xsd:element maxOccurs="unbounded" name="result" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="addIntList">
+            <xsd:sequence>
+              <xsd:element maxOccurs="unbounded" name="string1" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="addIntListResponse">
+            <xsd:sequence>
+              <xsd:element name="result" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="evenNumber">
+            <xsd:sequence>
+              <xsd:element name="range" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="evenNumberResponse">
+            <xsd:sequence>
+              <xsd:element maxOccurs="unbounded" name="evenNumbers" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="oddNumber">
+            <xsd:sequence>
+              <xsd:element name="range" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="oddNumberResponse">
+            <xsd:sequence>
+              <xsd:element maxOccurs="unbounded" name="oddNumbers" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="concatAndUpper">
+            <xsd:sequence>
+              <xsd:element maxOccurs="unbounded" name="names" nillable="true" type="tns:names"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="names">
+            <xsd:sequence>
+              <xsd:element name="name1" nillable="true" type="xsd:string"/>
+              <xsd:element name="name2" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="concatAndUpperResponse">
+            <xsd:sequence>
+              <xsd:element name="result" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="indexNumber">
+            <xsd:sequence>
+              <xsd:element name="index" nillable="true" type="xsd:string"/>
+              <xsd:element name="string1" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="indexNumberResponse">
+            <xsd:sequence>
+              <xsd:element maxOccurs="unbounded" name="result" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="newLineCharactor">
+            <xsd:sequence>
+              <xsd:element name="input" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="newLineCharactorResponse">
+            <xsd:sequence>
+              <xsd:element name="result" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="replaceAll">
+            <xsd:sequence>
+              <xsd:element name="string1" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="replaceAllResponse">
+            <xsd:sequence>
+              <xsd:element name="result" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="stringColonSeprated">
+            <xsd:sequence>
+              <xsd:element maxOccurs="unbounded" name="input" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="stringColonSepratedResponse">
+            <xsd:sequence>
+              <xsd:element name="listConvertedToString" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="stringEmptySpace">
+            <xsd:sequence>
+              <xsd:element name="string1" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="stringEmptySpaceResponse">
+            <xsd:sequence>
+              <xsd:element name="result" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="stringMethods">
+            <xsd:sequence>
+              <xsd:element name="string1" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="stringMethodsResponse">
+            <xsd:sequence>
+              <xsd:element name="stringFormat" nillable="true" type="xsd:string"/>
+              <xsd:element name="stringLength" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="compareDates">
+            <xsd:sequence>
+              <xsd:element name="date1" nillable="true" type="xsd:string"/>
+              <xsd:element name="date2" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="compareDatesResponse">
+            <xsd:sequence>
+              <xsd:element name="result" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="dateFormatConversion">
+            <xsd:sequence>
+              <xsd:element name="date1" nillable="true" type="xsd:string"/>
+              <xsd:element name="pattern" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="dateFormatConversionResponse">
+            <xsd:sequence>
+              <xsd:element name="resultDate" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="getCurrentDateTime">
+            <xsd:sequence>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="getCurrentDateTimeResponse">
+            <xsd:sequence>
+              <xsd:element name="currentDateTime" nillable="true" type="xsd:string"/>
+              <xsd:element name="javaDate" nillable="true" type="xsd:dateTime"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="getDateTimeFormat">
+            <xsd:sequence>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="getDateTimeFormatResponse">
+            <xsd:sequence>
+              <xsd:element name="javaUtilDate" nillable="true" type="xsd:string"/>
+              <xsd:element name="date" nillable="true" type="xsd:dateTime"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="getStartEndDate">
+            <xsd:sequence>
+              <xsd:element name="startDate" nillable="true" type="xsd:string"/>
+              <xsd:element name="enddate" nillable="true" type="xsd:string"/>
+              <xsd:element name="sParttern" nillable="true" type="xsd:string"/>
+              <xsd:element name="ePattern" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="getStartEndDateResponse">
+            <xsd:sequence>
+              <xsd:element name="dateDifferenceSeconds" nillable="true" type="xsd:string"/>
+              <xsd:element name="dateDifferenceMinutes" nillable="true" type="xsd:string"/>
+              <xsd:element name="dateDifferenceHours" nillable="true" type="xsd:string"/>
+              <xsd:element name="dateDifferenceDays" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="workingDays">
+            <xsd:sequence>
+              <xsd:element name="date1" nillable="true" type="xsd:string"/>
+              <xsd:element name="date2" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="workingDaysResponse">
+            <xsd:sequence>
+              <xsd:element name="workingDays" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="calcPrac">
+            <xsd:sequence>
+              <xsd:element name="int1" nillable="true" type="xsd:string"/>
+              <xsd:element name="int2" nillable="true" type="xsd:string"/>
+              <xsd:element name="operation" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="calcPracResponse">
+            <xsd:sequence>
+              <xsd:element name="result" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        	</xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="addIntWs_PortType_stringEmptySpace">
+    <wsdl:part name="parameters" element="tns:stringEmptySpace">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addIntWs_PortType_compareDates">
+    <wsdl:part name="parameters" element="tns:compareDates">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addIntWs_PortType_indexNumber">
+    <wsdl:part name="parameters" element="tns:indexNumber">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addIntWs_PortType_calcPrac">
+    <wsdl:part name="parameters" element="tns:calcPrac">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addIntWs_PortType_addIntListResponse">
+    <wsdl:part name="parameters" element="tns:addIntListResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addIntWs_PortType_compareDatesResponse">
+    <wsdl:part name="parameters" element="tns:compareDatesResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addIntWs_PortType_replaceAll">
+    <wsdl:part name="parameters" element="tns:replaceAll">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addIntWs_PortType_addDocumentList">
+    <wsdl:part name="parameters" element="tns:addDocumentList">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addIntWs_PortType_getDateTimeFormat">
+    <wsdl:part name="parameters" element="tns:getDateTimeFormat">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addIntWs_PortType_getDateTimeFormatResponse">
+    <wsdl:part name="parameters" element="tns:getDateTimeFormatResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addIntWs_PortType_addInputList">
+    <wsdl:part name="parameters" element="tns:addInputList">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addIntWs_PortType_ifElseResponse">
+    <wsdl:part name="parameters" element="tns:ifElseResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addIntWs_PortType_calcIfElseResponse">
+    <wsdl:part name="parameters" element="tns:calcIfElseResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addIntWs_PortType_stringMethods">
+    <wsdl:part name="parameters" element="tns:stringMethods">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addIntWs_PortType_dateFormatConversionResponse">
+    <wsdl:part name="parameters" element="tns:dateFormatConversionResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addIntWs_PortType_evenNumberResponse">
+    <wsdl:part name="parameters" element="tns:evenNumberResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addIntWs_PortType_replaceAllResponse">
+    <wsdl:part name="parameters" element="tns:replaceAllResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addIntWs_PortType_calcExceptionHandling">
+    <wsdl:part name="parameters" element="tns:calcExceptionHandling">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addIntWs_PortType_stringMethodsResponse">
+    <wsdl:part name="parameters" element="tns:stringMethodsResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addIntWs_PortType_addDocumentListResponse">
+    <wsdl:part name="parameters" element="tns:addDocumentListResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addIntWs_PortType_oddNumber">
+    <wsdl:part name="parameters" element="tns:oddNumber">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addIntWs_PortType_getCurrentDateTime">
+    <wsdl:part name="parameters" element="tns:getCurrentDateTime">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addIntWs_PortType_addIntList">
+    <wsdl:part name="parameters" element="tns:addIntList">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addIntWs_PortType_workingDays">
+    <wsdl:part name="parameters" element="tns:workingDays">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addIntWs_PortType_dateFormatConversion">
+    <wsdl:part name="parameters" element="tns:dateFormatConversion">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addIntWs_PortType_calcPracResponse">
+    <wsdl:part name="parameters" element="tns:calcPracResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addIntWs_PortType_concatAndUpperResponse">
+    <wsdl:part name="parameters" element="tns:concatAndUpperResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addIntWs_PortType_ifElse">
+    <wsdl:part name="parameters" element="tns:ifElse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addIntWs_PortType_getCurrentDateTimeResponse">
+    <wsdl:part name="parameters" element="tns:getCurrentDateTimeResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addIntWs_PortType_addInputListResponse">
+    <wsdl:part name="parameters" element="tns:addInputListResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addIntWs_PortType_workingDaysResponse">
+    <wsdl:part name="parameters" element="tns:workingDaysResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addIntWs_PortType_indexNumberResponse">
+    <wsdl:part name="parameters" element="tns:indexNumberResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addIntWs_PortType_calcExceptionHandlingResponse">
+    <wsdl:part name="parameters" element="tns:calcExceptionHandlingResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addIntWs_PortType_newLineCharactor">
+    <wsdl:part name="parameters" element="tns:newLineCharactor">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addIntWs_PortType_concatAndUpper">
+    <wsdl:part name="parameters" element="tns:concatAndUpper">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addIntWs_PortType_stringEmptySpaceResponse">
+    <wsdl:part name="parameters" element="tns:stringEmptySpaceResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addIntWs_PortType_getStartEndDate">
+    <wsdl:part name="parameters" element="tns:getStartEndDate">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addIntWs_PortType_calcIfElse">
+    <wsdl:part name="parameters" element="tns:calcIfElse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addIntWs_PortType_evenNumber">
+    <wsdl:part name="parameters" element="tns:evenNumber">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addIntWs_PortType_oddNumberResponse">
+    <wsdl:part name="parameters" element="tns:oddNumberResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addIntWs_PortType_getStartEndDateResponse">
+    <wsdl:part name="parameters" element="tns:getStartEndDateResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addIntWs_PortType_stringColonSepratedResponse">
+    <wsdl:part name="parameters" element="tns:stringColonSepratedResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addIntWs_PortType_stringColonSeprated">
+    <wsdl:part name="parameters" element="tns:stringColonSeprated">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addIntWs_PortType_newLineCharactorResponse">
+    <wsdl:part name="parameters" element="tns:newLineCharactorResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="addIntWs_PortType">
+    <wsdl:operation name="stringEmptySpace">
+      <wsdl:input message="tns:addIntWs_PortType_stringEmptySpace">
+    </wsdl:input>
+      <wsdl:output message="tns:addIntWs_PortType_stringEmptySpaceResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDateTimeFormat">
+      <wsdl:input message="tns:addIntWs_PortType_getDateTimeFormat">
+    </wsdl:input>
+      <wsdl:output message="tns:addIntWs_PortType_getDateTimeFormatResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="calcIfElse">
+      <wsdl:input message="tns:addIntWs_PortType_calcIfElse">
+    </wsdl:input>
+      <wsdl:output message="tns:addIntWs_PortType_calcIfElseResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addInputList">
+      <wsdl:input message="tns:addIntWs_PortType_addInputList">
+    </wsdl:input>
+      <wsdl:output message="tns:addIntWs_PortType_addInputListResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addIntList">
+      <wsdl:input message="tns:addIntWs_PortType_addIntList">
+    </wsdl:input>
+      <wsdl:output message="tns:addIntWs_PortType_addIntListResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="oddNumber">
+      <wsdl:input message="tns:addIntWs_PortType_oddNumber">
+    </wsdl:input>
+      <wsdl:output message="tns:addIntWs_PortType_oddNumberResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="compareDates">
+      <wsdl:input message="tns:addIntWs_PortType_compareDates">
+    </wsdl:input>
+      <wsdl:output message="tns:addIntWs_PortType_compareDatesResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="workingDays">
+      <wsdl:input message="tns:addIntWs_PortType_workingDays">
+    </wsdl:input>
+      <wsdl:output message="tns:addIntWs_PortType_workingDaysResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ifElse">
+      <wsdl:input message="tns:addIntWs_PortType_ifElse">
+    </wsdl:input>
+      <wsdl:output message="tns:addIntWs_PortType_ifElseResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="concatAndUpper">
+      <wsdl:input message="tns:addIntWs_PortType_concatAndUpper">
+    </wsdl:input>
+      <wsdl:output message="tns:addIntWs_PortType_concatAndUpperResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="stringColonSeprated">
+      <wsdl:input message="tns:addIntWs_PortType_stringColonSeprated">
+    </wsdl:input>
+      <wsdl:output message="tns:addIntWs_PortType_stringColonSepratedResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getStartEndDate">
+      <wsdl:input message="tns:addIntWs_PortType_getStartEndDate">
+    </wsdl:input>
+      <wsdl:output message="tns:addIntWs_PortType_getStartEndDateResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="indexNumber">
+      <wsdl:input message="tns:addIntWs_PortType_indexNumber">
+    </wsdl:input>
+      <wsdl:output message="tns:addIntWs_PortType_indexNumberResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCurrentDateTime">
+      <wsdl:input message="tns:addIntWs_PortType_getCurrentDateTime">
+    </wsdl:input>
+      <wsdl:output message="tns:addIntWs_PortType_getCurrentDateTimeResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dateFormatConversion">
+      <wsdl:input message="tns:addIntWs_PortType_dateFormatConversion">
+    </wsdl:input>
+      <wsdl:output message="tns:addIntWs_PortType_dateFormatConversionResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="stringMethods">
+      <wsdl:input message="tns:addIntWs_PortType_stringMethods">
+    </wsdl:input>
+      <wsdl:output message="tns:addIntWs_PortType_stringMethodsResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="calcPrac">
+      <wsdl:input message="tns:addIntWs_PortType_calcPrac">
+    </wsdl:input>
+      <wsdl:output message="tns:addIntWs_PortType_calcPracResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="calcExceptionHandling">
+      <wsdl:input message="tns:addIntWs_PortType_calcExceptionHandling">
+    </wsdl:input>
+      <wsdl:output message="tns:addIntWs_PortType_calcExceptionHandlingResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="evenNumber">
+      <wsdl:input message="tns:addIntWs_PortType_evenNumber">
+    </wsdl:input>
+      <wsdl:output message="tns:addIntWs_PortType_evenNumberResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="replaceAll">
+      <wsdl:input message="tns:addIntWs_PortType_replaceAll">
+    </wsdl:input>
+      <wsdl:output message="tns:addIntWs_PortType_replaceAllResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="newLineCharactor">
+      <wsdl:input message="tns:addIntWs_PortType_newLineCharactor">
+    </wsdl:input>
+      <wsdl:output message="tns:addIntWs_PortType_newLineCharactorResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addDocumentList">
+      <wsdl:input message="tns:addIntWs_PortType_addDocumentList">
+    </wsdl:input>
+      <wsdl:output message="tns:addIntWs_PortType_addDocumentListResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Task_v4_services_addIntWs_Binder" type="tns:addIntWs_PortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="stringEmptySpace">
+      <soap:operation soapAction="Task_v4_services_addIntWs_Binder_stringEmptySpace" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDateTimeFormat">
+      <soap:operation soapAction="Task_v4_services_addIntWs_Binder_getDateTimeFormat" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="calcIfElse">
+      <soap:operation soapAction="Task_v4_services_addIntWs_Binder_calcIfElse" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addInputList">
+      <soap:operation soapAction="Task_v4_services_addIntWs_Binder_addInputList" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addIntList">
+      <soap:operation soapAction="Task_v4_services_addIntWs_Binder_addIntList" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="oddNumber">
+      <soap:operation soapAction="Task_v4_services_addIntWs_Binder_oddNumber" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="compareDates">
+      <soap:operation soapAction="Task_v4_services_addIntWs_Binder_compareDates" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="workingDays">
+      <soap:operation soapAction="Task_v4_services_addIntWs_Binder_workingDays" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ifElse">
+      <soap:operation soapAction="Task_v4_services_addIntWs_Binder_ifElse" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="concatAndUpper">
+      <soap:operation soapAction="Task_v4_services_addIntWs_Binder_concatAndUpper" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="stringColonSeprated">
+      <soap:operation soapAction="Task_v4_services_addIntWs_Binder_stringColonSeprated" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getStartEndDate">
+      <soap:operation soapAction="Task_v4_services_addIntWs_Binder_getStartEndDate" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="indexNumber">
+      <soap:operation soapAction="Task_v4_services_addIntWs_Binder_indexNumber" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCurrentDateTime">
+      <soap:operation soapAction="Task_v4_services_addIntWs_Binder_getCurrentDateTime" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dateFormatConversion">
+      <soap:operation soapAction="Task_v4_services_addIntWs_Binder_dateFormatConversion" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="stringMethods">
+      <soap:operation soapAction="Task_v4_services_addIntWs_Binder_stringMethods" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="calcPrac">
+      <soap:operation soapAction="Task_v4_services_addIntWs_Binder_calcPrac" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="calcExceptionHandling">
+      <soap:operation soapAction="Task_v4_services_addIntWs_Binder_calcExceptionHandling" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="evenNumber">
+      <soap:operation soapAction="Task_v4_services_addIntWs_Binder_evenNumber" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="replaceAll">
+      <soap:operation soapAction="Task_v4_services_addIntWs_Binder_replaceAll" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="newLineCharactor">
+      <soap:operation soapAction="Task_v4_services_addIntWs_Binder_newLineCharactor" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addDocumentList">
+      <soap:operation soapAction="Task_v4_services_addIntWs_Binder_addDocumentList" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Task.apis.soap.taskWsd">
+    <wsdl:port name="Task_v4_services_addIntWs_Port" binding="tns:Task_v4_services_addIntWs_Binder">
+      <soap:address location="http://DESKTOP-0NSV5VM:5555/ws/Task.apis.soap:taskWsd/Task_v4_services_addIntWs_Port"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

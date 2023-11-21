@@ -1,0 +1,827 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="node_type">webServiceDescriptor</value>
+  <value name="node_subtype">unknown</value>
+  <value name="node_nsName">Task.apis.soap:consumerGain</value>
+  <value name="node_pkg">Task</value>
+  <value name="is_public">false</value>
+  <Boolean name="inbound">false</Boolean>
+  <Boolean name="WSICompliant">false</Boolean>
+  <value name="SOAPProtocol">SOAP 1.1 Protocol</value>
+  <value name="targetNamespace">http://DESKTOP-0NSV5VM/Task.v4.services:addIntWs</value>
+  <Boolean name="attachmentEnabled">false</Boolean>
+  <number name="mtomThreshold" type="Integer">0</number>
+  <array name="externalWSDLSources" type="record" depth="1">
+    <record javaclass="com.wm.util.Values">
+      <value name="contextURI">http://localhost:5555/</value>
+      <value name="locationURI">Task.apis.soap.consumerGain?wsdl=wsdl0</value>
+      <null name="source"/>
+      <number name="type" type="Integer">1</number>
+    </record>
+  </array>
+  <value name="externalWSDLURL">http://DESKTOP-0NSV5VM:5555/ws/Task.apis.soap:taskWsd?WSDL</value>
+  <value name="WSDLURL">http://DESKTOP-0NSV5VM:5555/ws/Task.apis.soap:consumerGain?WSDL</value>
+  <value name="definitionName">addIntWs</value>
+  <value name="version">V_10_15</value>
+  <value name="schemaDomain">9c1072899923455aa13077fe37a5a352</value>
+  <Boolean name="rawArray">true</Boolean>
+  <array name="handlerList" type="record" depth="1">
+  </array>
+  <array name="binderList" type="record" depth="1">
+    <record javaclass="com.wm.util.Values">
+      <value name="binderName">Task_v4_services_addIntWs_Binder</value>
+      <value name="portAddress">http://DESKTOP-0NSV5VM:5555/ws/Task.apis.soap:taskWsd/Task_v4_services_addIntWs_Port</value>
+      <value name="bindingName">Task_v4_services_addIntWs_Binder</value>
+      <value name="bindingStyle">document</value>
+      <value name="bindingUse">literal</value>
+      <value name="bindingType">SOAP</value>
+      <value name="portName">Task_v4_services_addIntWs_Port</value>
+      <value name="portTypeName">addIntWs_PortType</value>
+      <value name="bindingTransport">http://schemas.xmlsoap.org/soap/http</value>
+      <value name="transportType">http</value>
+      <record name="operationMap" javaclass="com.wm.util.Values">
+        <value name="Task_v4_services_addIntWs_Binder_stringEmptySpace">stringEmptySpace</value>
+        <value name="Task_v4_services_addIntWs_Binder_getDateTimeFormat">getDateTimeFormat</value>
+        <value name="Task_v4_services_addIntWs_Binder_calcIfElse">calcIfElse</value>
+        <value name="Task_v4_services_addIntWs_Binder_addInputList">addInputList</value>
+        <value name="Task_v4_services_addIntWs_Binder_addIntList">addIntList</value>
+        <value name="Task_v4_services_addIntWs_Binder_oddNumber">oddNumber</value>
+        <value name="Task_v4_services_addIntWs_Binder_compareDates">compareDates</value>
+        <value name="Task_v4_services_addIntWs_Binder_workingDays">workingDays</value>
+        <value name="Task_v4_services_addIntWs_Binder_ifElse">ifElse</value>
+        <value name="Task_v4_services_addIntWs_Binder_concatAndUpper">concatAndUpper</value>
+        <value name="Task_v4_services_addIntWs_Binder_stringColonSeprated">stringColonSeprated</value>
+        <value name="Task_v4_services_addIntWs_Binder_getStartEndDate">getStartEndDate</value>
+        <value name="Task_v4_services_addIntWs_Binder_indexNumber">indexNumber</value>
+        <value name="Task_v4_services_addIntWs_Binder_getCurrentDateTime">getCurrentDateTime</value>
+        <value name="Task_v4_services_addIntWs_Binder_dateFormatConversion">dateFormatConversion</value>
+        <value name="Task_v4_services_addIntWs_Binder_stringMethods">stringMethods</value>
+        <value name="Task_v4_services_addIntWs_Binder_calcPrac">calcPrac</value>
+        <value name="Task_v4_services_addIntWs_Binder_calcExceptionHandling">calcExceptionHandling</value>
+        <value name="Task_v4_services_addIntWs_Binder_evenNumber">evenNumber</value>
+        <value name="Task_v4_services_addIntWs_Binder_replaceAll">replaceAll</value>
+        <value name="Task_v4_services_addIntWs_Binder_newLineCharactor">newLineCharactor</value>
+        <value name="Task_v4_services_addIntWs_Binder_addDocumentList">addDocumentList</value>
+      </record>
+      <value name="SOAPProtocol">SOAP 1.1 Protocol</value>
+      <value name="SOAPDirective">ws</value>
+      <Boolean name="useCSQ">false</Boolean>
+    </record>
+  </array>
+  <array name="operationList" type="record" depth="1">
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">stringEmptySpace</value>
+      <value name="serviceName">Task.apis.soap.consumerGain_.connectors:addIntWs_PortType_stringEmptySpace</value>
+      <value name="originalMEPType">MEP_URI_IN_OUT</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">http://DESKTOP-0NSV5VM/Task.v4.services:addIntWs:addIntWs_PortType_stringEmptySpace_Input</value>
+          <value name="docType">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_stringEmptySpace_Input</value>
+          <value name="nsOwner">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_stringEmptySpace_Input</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">http://DESKTOP-0NSV5VM/Task.v4.services:addIntWs:addIntWs_PortType_stringEmptySpace_Output</value>
+          <value name="docType">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_stringEmptySpace_Output</value>
+          <value name="nsOwner">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_stringEmptySpace_Output</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">getDateTimeFormat</value>
+      <value name="serviceName">Task.apis.soap.consumerGain_.connectors:addIntWs_PortType_getDateTimeFormat</value>
+      <value name="originalMEPType">MEP_URI_IN_OUT</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">http://DESKTOP-0NSV5VM/Task.v4.services:addIntWs:addIntWs_PortType_getDateTimeFormat_Input</value>
+          <value name="docType">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_getDateTimeFormat_Input</value>
+          <value name="nsOwner">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_getDateTimeFormat_Input</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">http://DESKTOP-0NSV5VM/Task.v4.services:addIntWs:addIntWs_PortType_getDateTimeFormat_Output</value>
+          <value name="docType">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_getDateTimeFormat_Output</value>
+          <value name="nsOwner">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_getDateTimeFormat_Output</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">calcIfElse</value>
+      <value name="serviceName">Task.apis.soap.consumerGain_.connectors:addIntWs_PortType_calcIfElse</value>
+      <value name="originalMEPType">MEP_URI_IN_OUT</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">http://DESKTOP-0NSV5VM/Task.v4.services:addIntWs:addIntWs_PortType_calcIfElse_Input</value>
+          <value name="docType">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_calcIfElse_Input</value>
+          <value name="nsOwner">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_calcIfElse_Input</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">http://DESKTOP-0NSV5VM/Task.v4.services:addIntWs:addIntWs_PortType_calcIfElse_Output</value>
+          <value name="docType">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_calcIfElse_Output</value>
+          <value name="nsOwner">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_calcIfElse_Output</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">addInputList</value>
+      <value name="serviceName">Task.apis.soap.consumerGain_.connectors:addIntWs_PortType_addInputList</value>
+      <value name="originalMEPType">MEP_URI_IN_OUT</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">http://DESKTOP-0NSV5VM/Task.v4.services:addIntWs:addIntWs_PortType_addInputList_Input</value>
+          <value name="docType">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_addInputList_Input</value>
+          <value name="nsOwner">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_addInputList_Input</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">http://DESKTOP-0NSV5VM/Task.v4.services:addIntWs:addIntWs_PortType_addInputList_Output</value>
+          <value name="docType">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_addInputList_Output</value>
+          <value name="nsOwner">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_addInputList_Output</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">addIntList</value>
+      <value name="serviceName">Task.apis.soap.consumerGain_.connectors:addIntWs_PortType_addIntList</value>
+      <value name="originalMEPType">MEP_URI_IN_OUT</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">http://DESKTOP-0NSV5VM/Task.v4.services:addIntWs:addIntWs_PortType_addIntList_Input</value>
+          <value name="docType">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_addIntList_Input</value>
+          <value name="nsOwner">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_addIntList_Input</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">http://DESKTOP-0NSV5VM/Task.v4.services:addIntWs:addIntWs_PortType_addIntList_Output</value>
+          <value name="docType">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_addIntList_Output</value>
+          <value name="nsOwner">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_addIntList_Output</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">oddNumber</value>
+      <value name="serviceName">Task.apis.soap.consumerGain_.connectors:addIntWs_PortType_oddNumber</value>
+      <value name="originalMEPType">MEP_URI_IN_OUT</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">http://DESKTOP-0NSV5VM/Task.v4.services:addIntWs:addIntWs_PortType_oddNumber_Input</value>
+          <value name="docType">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_oddNumber_Input</value>
+          <value name="nsOwner">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_oddNumber_Input</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">http://DESKTOP-0NSV5VM/Task.v4.services:addIntWs:addIntWs_PortType_oddNumber_Output</value>
+          <value name="docType">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_oddNumber_Output</value>
+          <value name="nsOwner">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_oddNumber_Output</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">compareDates</value>
+      <value name="serviceName">Task.apis.soap.consumerGain_.connectors:addIntWs_PortType_compareDates</value>
+      <value name="originalMEPType">MEP_URI_IN_OUT</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">http://DESKTOP-0NSV5VM/Task.v4.services:addIntWs:addIntWs_PortType_compareDates_Input</value>
+          <value name="docType">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_compareDates_Input</value>
+          <value name="nsOwner">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_compareDates_Input</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">http://DESKTOP-0NSV5VM/Task.v4.services:addIntWs:addIntWs_PortType_compareDates_Output</value>
+          <value name="docType">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_compareDates_Output</value>
+          <value name="nsOwner">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_compareDates_Output</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">workingDays</value>
+      <value name="serviceName">Task.apis.soap.consumerGain_.connectors:addIntWs_PortType_workingDays</value>
+      <value name="originalMEPType">MEP_URI_IN_OUT</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">http://DESKTOP-0NSV5VM/Task.v4.services:addIntWs:addIntWs_PortType_workingDays_Input</value>
+          <value name="docType">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_workingDays_Input</value>
+          <value name="nsOwner">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_workingDays_Input</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">http://DESKTOP-0NSV5VM/Task.v4.services:addIntWs:addIntWs_PortType_workingDays_Output</value>
+          <value name="docType">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_workingDays_Output</value>
+          <value name="nsOwner">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_workingDays_Output</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">ifElse</value>
+      <value name="serviceName">Task.apis.soap.consumerGain_.connectors:addIntWs_PortType_ifElse</value>
+      <value name="originalMEPType">MEP_URI_IN_OUT</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">http://DESKTOP-0NSV5VM/Task.v4.services:addIntWs:addIntWs_PortType_ifElse_Input</value>
+          <value name="docType">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_ifElse_Input</value>
+          <value name="nsOwner">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_ifElse_Input</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">http://DESKTOP-0NSV5VM/Task.v4.services:addIntWs:addIntWs_PortType_ifElse_Output</value>
+          <value name="docType">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_ifElse_Output</value>
+          <value name="nsOwner">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_ifElse_Output</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">concatAndUpper</value>
+      <value name="serviceName">Task.apis.soap.consumerGain_.connectors:addIntWs_PortType_concatAndUpper</value>
+      <value name="originalMEPType">MEP_URI_IN_OUT</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">http://DESKTOP-0NSV5VM/Task.v4.services:addIntWs:addIntWs_PortType_concatAndUpper_Input</value>
+          <value name="docType">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_concatAndUpper_Input</value>
+          <value name="nsOwner">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_concatAndUpper_Input</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">http://DESKTOP-0NSV5VM/Task.v4.services:addIntWs:addIntWs_PortType_concatAndUpper_Output</value>
+          <value name="docType">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_concatAndUpper_Output</value>
+          <value name="nsOwner">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_concatAndUpper_Output</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">stringColonSeprated</value>
+      <value name="serviceName">Task.apis.soap.consumerGain_.connectors:addIntWs_PortType_stringColonSeprated</value>
+      <value name="originalMEPType">MEP_URI_IN_OUT</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">http://DESKTOP-0NSV5VM/Task.v4.services:addIntWs:addIntWs_PortType_stringColonSeprated_Input</value>
+          <value name="docType">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_stringColonSeprated_Input</value>
+          <value name="nsOwner">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_stringColonSeprated_Input</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">http://DESKTOP-0NSV5VM/Task.v4.services:addIntWs:addIntWs_PortType_stringColonSeprated_Output</value>
+          <value name="docType">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_stringColonSeprated_Output</value>
+          <value name="nsOwner">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_stringColonSeprated_Output</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">getStartEndDate</value>
+      <value name="serviceName">Task.apis.soap.consumerGain_.connectors:addIntWs_PortType_getStartEndDate</value>
+      <value name="originalMEPType">MEP_URI_IN_OUT</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">http://DESKTOP-0NSV5VM/Task.v4.services:addIntWs:addIntWs_PortType_getStartEndDate_Input</value>
+          <value name="docType">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_getStartEndDate_Input</value>
+          <value name="nsOwner">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_getStartEndDate_Input</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">http://DESKTOP-0NSV5VM/Task.v4.services:addIntWs:addIntWs_PortType_getStartEndDate_Output</value>
+          <value name="docType">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_getStartEndDate_Output</value>
+          <value name="nsOwner">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_getStartEndDate_Output</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">indexNumber</value>
+      <value name="serviceName">Task.apis.soap.consumerGain_.connectors:addIntWs_PortType_indexNumber</value>
+      <value name="originalMEPType">MEP_URI_IN_OUT</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">http://DESKTOP-0NSV5VM/Task.v4.services:addIntWs:addIntWs_PortType_indexNumber_Input</value>
+          <value name="docType">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_indexNumber_Input</value>
+          <value name="nsOwner">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_indexNumber_Input</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">http://DESKTOP-0NSV5VM/Task.v4.services:addIntWs:addIntWs_PortType_indexNumber_Output</value>
+          <value name="docType">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_indexNumber_Output</value>
+          <value name="nsOwner">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_indexNumber_Output</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">getCurrentDateTime</value>
+      <value name="serviceName">Task.apis.soap.consumerGain_.connectors:addIntWs_PortType_getCurrentDateTime</value>
+      <value name="originalMEPType">MEP_URI_IN_OUT</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">http://DESKTOP-0NSV5VM/Task.v4.services:addIntWs:addIntWs_PortType_getCurrentDateTime_Input</value>
+          <value name="docType">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_getCurrentDateTime_Input</value>
+          <value name="nsOwner">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_getCurrentDateTime_Input</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">http://DESKTOP-0NSV5VM/Task.v4.services:addIntWs:addIntWs_PortType_getCurrentDateTime_Output</value>
+          <value name="docType">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_getCurrentDateTime_Output</value>
+          <value name="nsOwner">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_getCurrentDateTime_Output</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">dateFormatConversion</value>
+      <value name="serviceName">Task.apis.soap.consumerGain_.connectors:addIntWs_PortType_dateFormatConversion</value>
+      <value name="originalMEPType">MEP_URI_IN_OUT</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">http://DESKTOP-0NSV5VM/Task.v4.services:addIntWs:addIntWs_PortType_dateFormatConversion_Input</value>
+          <value name="docType">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_dateFormatConversion_Input</value>
+          <value name="nsOwner">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_dateFormatConversion_Input</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">http://DESKTOP-0NSV5VM/Task.v4.services:addIntWs:addIntWs_PortType_dateFormatConversion_Output</value>
+          <value name="docType">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_dateFormatConversion_Output</value>
+          <value name="nsOwner">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_dateFormatConversion_Output</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">stringMethods</value>
+      <value name="serviceName">Task.apis.soap.consumerGain_.connectors:addIntWs_PortType_stringMethods</value>
+      <value name="originalMEPType">MEP_URI_IN_OUT</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">http://DESKTOP-0NSV5VM/Task.v4.services:addIntWs:addIntWs_PortType_stringMethods_Input</value>
+          <value name="docType">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_stringMethods_Input</value>
+          <value name="nsOwner">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_stringMethods_Input</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">http://DESKTOP-0NSV5VM/Task.v4.services:addIntWs:addIntWs_PortType_stringMethods_Output</value>
+          <value name="docType">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_stringMethods_Output</value>
+          <value name="nsOwner">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_stringMethods_Output</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">calcPrac</value>
+      <value name="serviceName">Task.apis.soap.consumerGain_.connectors:addIntWs_PortType_calcPrac</value>
+      <value name="originalMEPType">MEP_URI_IN_OUT</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">http://DESKTOP-0NSV5VM/Task.v4.services:addIntWs:addIntWs_PortType_calcPrac_Input</value>
+          <value name="docType">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_calcPrac_Input</value>
+          <value name="nsOwner">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_calcPrac_Input</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">http://DESKTOP-0NSV5VM/Task.v4.services:addIntWs:addIntWs_PortType_calcPrac_Output</value>
+          <value name="docType">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_calcPrac_Output</value>
+          <value name="nsOwner">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_calcPrac_Output</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">calcExceptionHandling</value>
+      <value name="serviceName">Task.apis.soap.consumerGain_.connectors:addIntWs_PortType_calcExceptionHandling</value>
+      <value name="originalMEPType">MEP_URI_IN_OUT</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">http://DESKTOP-0NSV5VM/Task.v4.services:addIntWs:addIntWs_PortType_calcExceptionHandling_Input</value>
+          <value name="docType">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_calcExceptionHandling_Input</value>
+          <value name="nsOwner">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_calcExceptionHandling_Input</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">http://DESKTOP-0NSV5VM/Task.v4.services:addIntWs:addIntWs_PortType_calcExceptionHandling_Output</value>
+          <value name="docType">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_calcExceptionHandling_Output</value>
+          <value name="nsOwner">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_calcExceptionHandling_Output</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">evenNumber</value>
+      <value name="serviceName">Task.apis.soap.consumerGain_.connectors:addIntWs_PortType_evenNumber</value>
+      <value name="originalMEPType">MEP_URI_IN_OUT</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">http://DESKTOP-0NSV5VM/Task.v4.services:addIntWs:addIntWs_PortType_evenNumber_Input</value>
+          <value name="docType">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_evenNumber_Input</value>
+          <value name="nsOwner">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_evenNumber_Input</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">http://DESKTOP-0NSV5VM/Task.v4.services:addIntWs:addIntWs_PortType_evenNumber_Output</value>
+          <value name="docType">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_evenNumber_Output</value>
+          <value name="nsOwner">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_evenNumber_Output</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">replaceAll</value>
+      <value name="serviceName">Task.apis.soap.consumerGain_.connectors:addIntWs_PortType_replaceAll</value>
+      <value name="originalMEPType">MEP_URI_IN_OUT</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">http://DESKTOP-0NSV5VM/Task.v4.services:addIntWs:addIntWs_PortType_replaceAll_Input</value>
+          <value name="docType">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_replaceAll_Input</value>
+          <value name="nsOwner">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_replaceAll_Input</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">http://DESKTOP-0NSV5VM/Task.v4.services:addIntWs:addIntWs_PortType_replaceAll_Output</value>
+          <value name="docType">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_replaceAll_Output</value>
+          <value name="nsOwner">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_replaceAll_Output</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">newLineCharactor</value>
+      <value name="serviceName">Task.apis.soap.consumerGain_.connectors:addIntWs_PortType_newLineCharactor</value>
+      <value name="originalMEPType">MEP_URI_IN_OUT</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">http://DESKTOP-0NSV5VM/Task.v4.services:addIntWs:addIntWs_PortType_newLineCharactor_Input</value>
+          <value name="docType">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_newLineCharactor_Input</value>
+          <value name="nsOwner">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_newLineCharactor_Input</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">http://DESKTOP-0NSV5VM/Task.v4.services:addIntWs:addIntWs_PortType_newLineCharactor_Output</value>
+          <value name="docType">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_newLineCharactor_Output</value>
+          <value name="nsOwner">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_newLineCharactor_Output</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">addDocumentList</value>
+      <value name="serviceName">Task.apis.soap.consumerGain_.connectors:addIntWs_PortType_addDocumentList</value>
+      <value name="originalMEPType">MEP_URI_IN_OUT</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">http://DESKTOP-0NSV5VM/Task.v4.services:addIntWs:addIntWs_PortType_addDocumentList_Input</value>
+          <value name="docType">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_addDocumentList_Input</value>
+          <value name="nsOwner">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_addDocumentList_Input</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">http://DESKTOP-0NSV5VM/Task.v4.services:addIntWs:addIntWs_PortType_addDocumentList_Output</value>
+          <value name="docType">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_addDocumentList_Output</value>
+          <value name="nsOwner">Task.apis.soap.consumerGain_.docTypes:addIntWs_PortType_addDocumentList_Output</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+    </record>
+  </array>
+  <record name="namespaces" javaclass="com.wm.util.Values">
+    <value name="wsdl">http://schemas.xmlsoap.org/wsdl/</value>
+    <value name="soapjms">http://www.w3.org/2010/soapjms/</value>
+    <value name="mime">http://schemas.xmlsoap.org/wsdl/mime/</value>
+    <value name="tns">http://DESKTOP-0NSV5VM/Task.v4.services:addIntWs</value>
+    <value name="xsd">http://www.w3.org/2001/XMLSchema</value>
+    <value name="http">http://schemas.xmlsoap.org/wsdl/http/</value>
+    <value name="soap12">http://schemas.xmlsoap.org/wsdl/soap12/</value>
+    <value name="soap">http://schemas.xmlsoap.org/wsdl/soap/</value>
+    <value name="soapenc">http://schemas.xmlsoap.org/soap/encoding/</value>
+  </record>
+  <Boolean name="HeadersInPipelineEnabled">false</Boolean>
+  <Boolean name="validateSOAPResponse">true</Boolean>
+  <Boolean name="validateSchemaUsingXerces">true</Boolean>
+  <Boolean name="enableCompatibility">false</Boolean>
+  <Boolean name="omitXSDAny">true</Boolean>
+  <record name="userDefinedURIReferencePrefixes" javaclass="com.wm.util.Values">
+    <value name="http://DESKTOP-0NSV5VM/Task.v4.services:addIntWs">tns</value>
+  </record>
+  <Boolean name="registerDoctypes">true</Boolean>
+  <Boolean name="allTypes">false</Boolean>
+  <Boolean name="generateXOPObjectForBase64Binary">false</Boolean>
+  <value name="originURI">http://DESKTOP-0NSV5VM:5555/ws/Task.apis.soap:taskWsd?WSDL</value>
+  <value name="modifiable">false</value>
+  <value name="externalServiceName">{http://DESKTOP-0NSV5VM/Task.v4.services:addIntWs}Task.apis.soap.taskWsd</value>
+  <null name="policyAttachmentList"/>
+  <Boolean name="filterLoginCredentials">false</Boolean>
+</Values>
